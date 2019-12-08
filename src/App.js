@@ -12,6 +12,7 @@ class App extends Component {
 }
 
 class Counter extends Component {
+
   state = {
     count: 0
   };
@@ -31,9 +32,10 @@ class Counter extends Component {
   render() {
     return (
       <div>
+        <h1 className="title" >Counter</h1>
         <h2 className="counter">{this.state.count}</h2>
         <button className="increment" onClick={this.increment}>Increment</button>
-        <button className="decrement" onClick={this.remove}>Decrement</button>
+        <button className="decrement" onClick={this.decrement}>Decrement</button>
       </div>
     );
   }
