@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  background-color: rgb(255,0,84);
+  min-height:100%; /* to make sure it is at least as tall as the viewport */
+  position:relative;
+  height:100%; /* force the BODY element to match the height of the HTML element */
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1
 }
 
 .App-logo {
@@ -35,4 +46,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.increment {
+  color:white;
+  background-color: red;
+}
+
+.decrement {
+  color: white;
+  background-color: blue; 
+}
+
+.counter {
+  color: white;
+}
+
+.title {
+font: 200 18px/1.2 'Gotham SSm A','Gotham SSm B',sans-serif;
+margin: 0;
+padding: 0;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+box-sizing: border-box;
+text-decoration: none;
+-webkit-tap-highlight-color: transparent;
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 18px;
+font-weight: 700;
+line-height: 1.2;
+text-transform: uppercase;
+letter-spacing: 1px;
+color:white;
+text-decoration: none;
 }

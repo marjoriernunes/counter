@@ -32,7 +32,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        <h1 className="title" >Counter</h1>
+        <h1 className="title" > <a href="http://192.168.0.105:3000/">Counter</a></h1>
         <h2 className="counter">{this.state.count}</h2>
         <button className="increment" onClick={this.increment}>Increment</button>
         <button className="decrement" onClick={this.decrement}>Decrement</button>
@@ -40,5 +40,6 @@ class Counter extends Component {
     );
   }
 }
+
 
 export default App;
