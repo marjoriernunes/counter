@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.increment {
+  color:white;
+  background-color: red;
+}
+
+.decrement {
+  color: white;
+  background-color: blue; 
+}
